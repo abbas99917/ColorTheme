@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+   padding: 20px;
+        text-transform: capitalize;
+
+
+}
+
+.title {
+    text-align: center;
+    color: black;
+}
+
+.light{
+   border: 1px solid blue;
+}
+.dark{
+    background-color: black;
+    color: white;
+    border: 1px solid green;
+}
+.green{
+    background-color: green;
+    border: 1px solid rgb(0, 0, 0);
+}
+.yellow{
+    background-color: yellow;
+    border: 1px solid red
+}
+.purple{
+    background-color: purple;
+    border: 1px solid ;
+}
+
+.aqua{
+    background-color: aqua;
+    border: 1px solid blue;
+}
+
+.gold{
+    background-color: gold;
+    border: 1px solid rgb(255, 0, 221);
+}
+.orange{
+    background-color: orange;
+    border: 1px solid rgb(255, 30, 0);
+}
+
+.oliva{
+    background-color: olive;
+    border: 1px solid rgb(172, 216, 219);
+}
+.indigo{
+    background-color: indigo;
+    border: 1px solid rgb(255, 0, 0);
+}
+.brown{
+    background-color: brown;
+    border: 1px solid rgb(43, 255, 0);
+}
+.magenta{
+    background-color: magenta;
+    border: 1px solid rgb(163, 199, 2);
+}
+.blue{
+    background-color: blue;
+    border: 1px solid rgb(5, 167, 19);
+}
+.indigo{
+    background-color: indigo;
+    border: 1px solid indigo;
+}
+.pink{
+    background-color: pink;
+    border: 1px solid rgb(94, 0, 201);
+}
+.red{
+    background-color: red;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .parent{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .parent{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        row-gap: 20px;
+    }
+    
+    
+}
+
